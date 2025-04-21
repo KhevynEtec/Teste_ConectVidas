@@ -10,7 +10,7 @@ form.addEventListener('submit', async (event) => {
     data.age = Number(data.age);
 
     try {
-        const response = await fetch('http://localhost:9067/cadastro/usuario', {
+        const response = await fetch('https://conectando-vidas-backend.onrender.com/cadastro/usuario', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
