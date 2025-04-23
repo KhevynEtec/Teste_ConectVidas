@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../css/cadastrousuario.css">
+
+  <!-- Fonts e ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <header class="bg-[#fdf1dc] py-4 px-6 shadow-sm">
+    <div class="container mx-auto flex justify-center items-center">
+      <div class="flex items-center">
+        <img src="C:\Users\DELL\OneDrive\Área de Trabalho\Conectando Vidas\assets\img\logo.png" alt="Logo"
+          style="width: 100px; height: 100px" />
+        <nav class="hidden md:flex space-x-8 ml-10">
+          <a href="../index.html" class="text-primary hover:text-primary/80 font-bold">Sobre Nós</a>
+          <span class="text-gray-400">|</span>
+          <a href="#" class="text-primary hover:text-primary/80 font-bold">Adoção</a>
+          <span class="text-gray-400">|</span>
+          <a href="#" class="text-primary hover:text-primary/80 font-bold">Doação</a>
+          <span class="text-gray-400">|</span>
+          <a href="#" class="text-primary hover:text-primary/80 font-bold">Voluntariado</a>
+          <span class="text-gray-400">|</span>
+          <a href="#" class="text-primary hover:text-primary/80 font-bold">Depoimentos</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <form id="formCadastro">
+    <div class="form-container">
+
+      <div class="form-left">
+        <input type="text" name="name" placeholder="Nome" required><br>
+        <input type="text" name="phone" placeholder="Telefone" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="number" name="age" placeholder="Idade" required><br>
+      </div>
+
+      <div class="form-right">
+        <input type="text" name="street" placeholder="Rua" required><br>
+        <input type="text" name="numberHome" placeholder="N°" required><br>
+        <input type="text" name="postalCode" placeholder="CEP" required><br>
+        <input type="text" name="city" placeholder="Cidade" required><br>
+      </div>
+
+    </div>
+
+    <input type="text" name="state" placeholder="Estado" required><br>
+
+    <select name="type" required>
+      <option value="">Selecione o tipo</option>
+      <option value="voluntario">Voluntário</option>
+      <option value="adotante">Adotante</option>
+      <option value="doador">Doador</option>
+    </select><br><br>
+
+    <input type="password" name="password" placeholder="Senha" required><br>
+    <button type="submit">Confirmar</button>
+  </form>
+
+  <script src="../js/api/cadastroUsuarios.js"></script>
+
+  </header>
+</body>

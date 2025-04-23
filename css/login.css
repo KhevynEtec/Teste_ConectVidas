@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #faebd7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Topo (logo + menu) */
+  .topo {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #003300;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  /* Caixa de login */
+  .login-container {
+    background-color: #ffc107;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 10px;
+    color: #003300;
+  }
+  
+  .login-container p {
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .login-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px 20px;
+    font-weight: bold;
+    color: #003300;
+  }
+  
+  .login-container input[type="email"],
+  .login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #003300;
+    border-radius: 25px;
+    outline: none;
+    text-indent: 10px;
+  }
+  
+  .login-container button {
+    background-color: #003300;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-container button:hover {
+    background-color: #002200;
+  }
+  
+/* Estilizando o formulário */
+.senha-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#senha {
+    padding: 10px;
+    padding-right: 35px; /* Deixa espaço para o ícone de olho */
+    margin-right: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 20px;  /* Mantém bordas arredondadas */
+    border: 2px solid #002200;  /* Borda verde escura #002200 */
+    outline: none;
+}
+
+/* Estilo para o ícone dentro do campo */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #002200; /* Cor do ícone de olho com o novo verde escuro */
+    pointer-events: auto; /* Permite interagir com o ícone */
+    border-radius: 50%; /* Faz o ícone ser arredondado */
+    padding: 5px; /* Deixa o ícone um pouco maior e com padding */
+}
+
+/* Foco no campo de senha */
+#senha:focus {
+    border-color: #002a00;
+}
