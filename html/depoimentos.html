@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Depoimentos | Conectando Vidas</title>
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0f4c35",
+                        secondary: "#f5e6d0",
+                    },
+                    borderRadius: {
+                        button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Fonts e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#fdf1dc] min-h-screen">
+    <!-- Header (comum a todas as páginas) -->
+    <header class="bg-[#fdf1dc] py-4 px-6 shadow-sm">
+        <div class="container mx-auto flex justify-center items-center">
+            <div class="flex items-center">
+                <img src="../assets/img/logo.png" alt="Logo" style="width: 100px; height: 100px" />
+                <nav class="hidden md:flex space-x-8 ml-10">
+                    <a href="../index.html" class="text-primary hover:text-primary/80 font-bold">Sobre Nós</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/adocao.html" class="text-primary hover:text-primary/80 font-bold">Adoção</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/doacao.html" class="text-primary hover:text-primary/80 font-bold">Doação</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/voluntario.html" class="text-primary hover:text-primary/80 font-bold">Voluntariado</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="#" class="text-primary hover:text-primary/80 font-bold">Depoimentos</a>
+                </nav>
+            </div>
+            <div class="flex space-x-4 ml-10">
+                <a href="../html/entrar.html">
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90">
+                        Entrar
+                    </button>
+                </a>
+                <a href="../html/cadastrar.html">
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90">
+                        Cadastrar
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO ESPECÍFICO -->
+    <main class="py-12 px-6 container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-primary mb-10">Histórias de Sucesso</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Depoimento 1 -->
+            <div class="flex flex-col items-center">
+                <div class="w-32 h-32 rounded-full border-8 border-[#b4e0cc] overflow-hidden mb-4">
+                    <img src="../assets/img/antenor.jpg" alt="Antenor e Felix" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-primary">Antenor e Felix</h3>
+                <p class="text-sm text-gray-700 mt-2">
+                    Adotei o Felix quando ele tinha 2 anos, ele é meu companheiro e me fez curar a depressão.
+                </p>
+            </div>
+
+            <!-- Depoimento 2 -->
+            <div class="flex flex-col items-center">
+                <div class="w-32 h-32 rounded-full border-8 border-[#97e1bc] overflow-hidden mb-4">
+                    <img src="../assets/img/ana.jpg" alt="Ana e Carly" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-primary">Ana e Carly</h3>
+                <p class="text-sm text-gray-700 mt-2">
+                    Adotar a Carly foi a melhor coisa que eu já fiz na minha vida. Ela é o motivo de eu voltar feliz pra
+                    casa.
+                </p>
+            </div>
+
+            <!-- Depoimento 3 -->
+            <div class="flex flex-col items-center">
+                <div class="w-32 h-32 rounded-full border-8 border-[#f9d771] overflow-hidden mb-4">
+                    <img src="../assets/img/familia.jpg" alt="Família Girard" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-primary text-center">Família Girard, Julie e Ben</h3>
+                <p class="text-sm text-gray-700 mt-2">Nosso lar ganhou mais alegria com nosso novo melhor amigo!</p>
+            </div>
+
+            <!-- Depoimento 4 -->
+            <div class="flex flex-col items-center">
+                <div class="w-32 h-32 rounded-full border-8 border-[#fcb07a] overflow-hidden mb-4">
+                    <img src="../assets/img/thiago.jpg" alt="Thiago e Lola" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-primary">Thiago e Lola</h3>
+                <p class="text-sm text-gray-700 mt-2">Uma conexão instantânea. A Lola é como minha filha!</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

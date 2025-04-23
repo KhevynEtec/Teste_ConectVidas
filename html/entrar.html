@@ -4,67 +4,101 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../css/login.css">
-</head>
+    <title>Conectando Vidas</title>
 
-<body>
-
-    <div class="topo">
-        <header class="bg-[#fdf1dc] py-4 px-6 shadow-sm">
-            <div class="container mx-auto flex justify-center items-center">
-                <div class="flex items-center">
-                    <img src="C:\Users\DELL\OneDrive\Área de Trabalho\Conectando Vidas\assets\img\logo.png" alt="Logo"
-                        style="width: 100px; height: 100px" />
-                    <nav class="hidden md:flex space-x-8 ml-10">
-                        <a href="../index.html" class="text-primary hover:text-primary/80 font-bold">Sobre Nós</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="#" class="text-primary hover:text-primary/80 font-bold">Adoção</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="#" class="text-primary hover:text-primary/80 font-bold">Doação</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="#" class="text-primary hover:text-primary/80 font-bold">Voluntariado</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="#" class="text-primary hover:text-primary/80 font-bold">Depoimentos</a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-    </div>
-
-    <div class="login-container">
-        <h2>LOGIN</h2>
-        <p>Preencha seus dados para <br>entrar em sua conta!</p>
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" required />
-
-            <label for="senha">Senha:</label>
-            <div class="senha-container">
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
-                <span id="mostrarSenha" class="eye-icon">👁️</span> <!-- Ícone de olho dentro do campo -->
-            </div>
-
-            <button type="submit">CONFIRMAR</button>
-        </form>
-    </div>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
 
     <script>
-        // Script para mostrar/ocultar senha
-        document.getElementById('mostrarSenha').addEventListener('click', function() {
-            var senhaField = document.getElementById('senha');
-            var eyeIcon = document.getElementById('mostrarSenha');
-            
-            if (senhaField.type === "password") {
-                senhaField.type = "text";
-                eyeIcon.textContent = "🙈";  // Ícone alternativo quando a senha está visível
-            } else {
-                senhaField.type = "password";
-                eyeIcon.textContent = "👁️";  // Ícone de olho
-            }
-        });
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0f4c35",
+                        secondary: "#f5e6d0",
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                },
+            },
+        };
     </script>
+
+    <!-- Fonts e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#fdf1dc] min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-[#fdf1dc] py-4 px-6 shadow-sm">
+        <div class="container mx-auto flex justify-center items-center">
+            <div class="flex items-center">
+                <img src="../assets/img/logo.png" alt="Logo" style="width: 100px; height: 100px" />
+                <nav class="hidden md:flex space-x-8 ml-10">
+                    <a href="../index.html" class="text-primary hover:text-primary/80 font-bold">Sobre Nós</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/adocao.html" class="text-primary hover:text-primary/80 font-bold">Adoção</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/doacao.html" class="text-primary hover:text-primary/80 font-bold">Doação</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/voluntario.html"
+                        class="text-primary hover:text-primary/80 font-bold">Voluntariado</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/voluntario.html"
+                        class="text-primary hover:text-primary/80 font-bold">Depoimentos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO ESPECÍFICO DA PÁGINA - Formulário de Login -->
+    <main class="py-12 px-6 container mx-auto flex justify-center items-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h1 class="text-3xl font-bold text-primary mb-6 text-center">Entrar</h1>
+
+            <!-- Formulário de Login -->
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="email" class="block text-lg text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email"
+                        class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                        required />
+                </div>
+
+                <div class="mb-6">
+                    <label for="senha" class="block text-lg text-gray-700">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha"
+                        class="w-full px-4 py-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                        required />
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-primary text-white py-2 rounded-button hover:bg-primary/90 focus:ring-2 focus:ring-primary focus:outline-none">
+                    Entrar
+                </button>
+            </form>
+
+            <div class="mt-6 text-center">
+                <p class="text-gray-600">Não tem uma conta? <a href="../html/cadastrar.html"
+                        class="text-primary font-semibold hover:text-primary/80">Cadastre-se</a></p>
+            </div>
+        </div>
+    </main>
 
 </body>
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conectando Vidas - Adoção</title>
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0f4c35",
+                        secondary: "#f5e6d0",
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Fonts e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-[#fdf1dc] min-h-screen">
+    <!-- Header (comum a todas as páginas) -->
+    <header class="bg-[#fdf1dc] py-4 px-6 shadow-sm">
+        <div class="container mx-auto flex justify-center items-center">
+            <div class="flex items-center">
+                <img src="../assets/img/logo.png" alt="Logo" style="width: 100px; height: 100px" />
+                <nav class="hidden md:flex space-x-8 ml-10">
+                    <a href="../index.html" class="text-primary hover:text-primary/80 font-bold">Sobre Nós</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="#" class="text-primary hover:text-primary/80 font-bold">Adoção</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/doacao.html" class="text-primary hover:text-primary/80 font-bold">Doação</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/voluntario.html" class="text-primary hover:text-primary/80 font-bold">Voluntariado</a>
+                    <span class="text-gray-400">|</span>
+                    <a href="../html/depoimentos.html" class="text-primary hover:text-primary/80 font-bold">Depoimentos</a>
+                </nav>
+            </div>
+            <div class="flex space-x-4 ml-10">
+                <a href="../html/entrar.html">
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90">
+                        Entrar
+                    </button>
+                </a>
+                <a href="../html/cadastrar.html">
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90">
+                        Cadastrar
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO DA PÁGINA DE ADOÇÃO -->
+    <main class="py-12 px-6 container mx-auto">
+        <h1 class="text-4xl font-bold text-primary mb-8">Adote um AUmigo</h1>
+
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Cartões de animais para adoção -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="../assets/img/dog1.png" alt="Cachorro 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h2 class="text-xl font-semibold text-primary">Cachorro 1</h2>
+                <p class="text-gray-600 mb-4">Idade: 2 anos<br>Sexo: Masculino</p>
+                <a href="#"><button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90 w-full">
+                        Adotar
+                    </button></a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="../assets/img/dog2.png" alt="Cachorro 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h2 class="text-xl font-semibold text-primary">Cachorro 2</h2>
+                <p class="text-gray-600 mb-4">Idade: 3 anos<br>Sexo: Feminino</p>
+                <a href="#"><button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90 w-full">
+                        Adotar
+                    </button></a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="../assets/img/dog3.png" alt="Cachorro 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h2 class="text-xl font-semibold text-primary">Cachorro 3</h2>
+                <p class="text-gray-600 mb-4">Idade: 1 ano<br>Sexo: Feminino</p>
+                <a href="#"><button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90 w-full">
+                        Adotar
+                    </button></a>
+
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <h2 class="text-2xl font-semibold text-primary mb-6">Como Funciona a Adoção</h2>
+            <p class="text-gray-600 mb-4">A adoção é simples e pode ser realizada de forma 100% online. Escolha um
+                animal que se encaixa no seu perfil, preencha o formulário de adoção, e nós entraremos em contato com
+                você!</p>
+            <button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90">
+                Mais Informações
+            </button>
+        </section>
+    </main>
+
+</body>
+
+</html>
